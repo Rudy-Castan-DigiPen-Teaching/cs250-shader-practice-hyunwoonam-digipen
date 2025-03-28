@@ -1,6 +1,5 @@
-#ifdef GL_ES
+#version 300 es
 precision mediump float;
-#endif
 
 #define PI 3.14159265359
 
@@ -24,6 +23,10 @@ float plot (vec2 st, float pct){
   return  smoothstep( pct-0.01, pct, st.y) -
           smoothstep( pct, pct+0.01, st.y);
 }
+
+
+
+out vec4 FragColor;
 
 float easeOutBounce(float x) {
   float n1 = 7.5625;
@@ -64,5 +67,5 @@ void main() {
     color = mix(color,vec3(0.0,1.0,0.0),plot(st,pct.g));
     color = mix(color,vec3(0.0,0.0,1.0),plot(st,pct.b));
 
-    gl_FragColor = vec4(color,1.0);
+    FragColor = vec4(color,1.0);
 }

@@ -1,6 +1,5 @@
-#ifdef GL_ES
+#version 300 es
 precision mediump float;
-#endif
 
 #define TWO_PI 6.28318530718
 
@@ -27,6 +26,10 @@ vec3 hsb2rgb( in vec3 c ){
     return c.z * mix( vec3(3.2), rgb, c.y);
 }
 
+
+
+out vec4 FragColor;
+
 void main(){
     vec2 st = gl_FragCoord.xy/u_resolution;
     vec3 color = vec3(0.0);
@@ -40,5 +43,5 @@ void main(){
     // and the Saturation to the radius
     color = hsb2rgb(vec3((angle + u_time/TWO_PI)+0.5,radius,1.0));
 
-    gl_FragColor = vec4(color,1.0);
+    FragColor = vec4(color,1.0);
 }
