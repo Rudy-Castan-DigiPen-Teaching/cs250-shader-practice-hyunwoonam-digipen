@@ -4,6 +4,15 @@ precision mediump float;
 
 #define TWO_PI 6.28318530718
 
+/**
+ * \file
+ * \author HyunWoo Nam
+ * \date 2025 Spring
+ * \par CS250 Computer Graphics II
+ * \copyright DigiPen Institute of Technology
+ */
+
+
 uniform vec2 u_resolution;
 uniform float u_time;
 

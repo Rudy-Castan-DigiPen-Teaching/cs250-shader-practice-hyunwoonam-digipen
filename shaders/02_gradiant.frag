@@ -4,6 +4,15 @@ precision mediump float;
 
 #define PI 3.14159265359
 
+/**
+ * \file
+ * \author HyunWoo Nam
+ * \date 2025 Spring
+ * \par CS250 Computer Graphics II
+ * \copyright DigiPen Institute of Technology
+ */
+
+
 uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
