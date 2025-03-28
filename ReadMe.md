@@ -7,4 +7,4 @@
 
 [gradiant](draw.html?shader=02_gradiant.frag)
 
-[hsvr](draw.html?shader=03_hsv.frag)
+[hsv](draw.html?shader=03_hsv.frag)
