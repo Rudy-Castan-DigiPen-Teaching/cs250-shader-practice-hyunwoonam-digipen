@@ -3,8 +3,8 @@
 
 [Hello Color](draw.html?shader=00_color.frag)
 
-[Hello Color](draw.html?shader=01_shaping.frag)
+[shaping](draw.html?shader=01_shaping.frag)
 
-[Hello Color](draw.html?shader=02_gradiant.frag)
+[gradiant](draw.html?shader=02_gradiant.frag)
 
-[Hello Color](draw.html?shader=03_hsvfrag)
+[hsvr](draw.html?shader=03_hsv.frag)
